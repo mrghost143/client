@@ -1,23 +1,30 @@
 
 
-import Header from "@layout/Header"
-import Footer from "@layout/footer"
+
 import Routing from "./route"
 
+import React from "react";
+import { Flex, Layout } from 'antd';
+import { Sidebar, Header, Footer } from "@layout";
+const { Content } = Layout;
+import { BrowserRouter as Router } from "react-router-dom";
 export const App = () => {
-
   return (
+    <Router>
+    <Flex gap="middle" wrap className="min-h-screen">
+      <Layout style={{ gap: "10px" }} >
+        <Header />
 
-    <div className="min-h-screen flex flex-col">
-      <Header />
+        <Layout style={{ gap: "10px" }}>
+          <Sidebar />
+          <Content >
+            <Routing />
+          </Content>
+        </Layout>
+        <Footer />
+      </Layout>
 
-      <main className="flex-grow">
-        {/* Your main content goes here */}
-        <h1 className="text-2xl text-center mt-10">Welcome to My App!</h1>
-        <Routing />
-      </main>
-
-      <Footer />
-    </div>
+    </Flex>
+    </Router>
   )
 }

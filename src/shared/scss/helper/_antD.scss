@@ -1,0 +1,67 @@
+.ant-layout {
+  background-color: #ffffff;
+  /* Change to your desired color */
+}
+
+.ant-layout-header {
+  background-color: #ffffff;
+  /* Optional: Change header background */
+  padding: 10px;
+  /* Optional: Change footer background */
+  border: 1px solid $primary-light;
+  height: unset;
+  line-height: unset;
+
+
+}
+
+.ant-layout-content {
+  background-color: #ffffff;
+  /* Optional: Change header background */
+  padding: 0px;
+  /* Optional: Change footer background */
+  // border: 1px solid $primary-light;
+
+}
+
+.ant-layout-footer {
+  background-color: #ffffff;
+  padding: 10px;
+  /* Optional: Change footer background */
+  border: 1px solid $primary-light;
+
+}
+
+.ant-layout-sider {
+  background-color: $primary-light;
+  /* Optional: Change sider background */
+  box-shadow: 0px 0px 2px $primary-color;
+  // border: 1px solid $primary-light;
+}
+
+.ant-menu {
+  background-color: unset !important;
+
+  &-item-group-title {
+    color: #000 !important;
+
+  }
+
+  &-submenu-title {
+    color: #000 !important;
+  }
+
+  &-item {
+    color: #000 !important;
+    &-selected{
+      background-color: $primary-color !important;
+      color: #fff !important;
+    }
+
+  }
+}
+
+.ant-table-thead >tr>th{
+  background-color: $primary-color !important;
+  color: #fff !important;
+}
